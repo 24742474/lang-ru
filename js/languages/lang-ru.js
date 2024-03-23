@@ -220,20 +220,20 @@ LANGUAGES.RU = {
             return `
             <h3>${p}</h3><br>
             ${p} - это первый слой сброса.
-            Престиж сбрасывает ваши ${toTextStyle('Акулу','shark')}, улучшения ${toTextStyle('Акулы','shark')} и ${toTextStyle('Рыбу','fish')} for за осколки ${toTextStyle('Престижа','prestige')}.
+            Престиж сбрасывает ваши ${toTextStyle('Акулу','shark')}, улучшения ${toTextStyle('Акулы','shark')} и ${toTextStyle('Рыбу','fish')} за осколки ${toTextStyle('Престижа','prestige')}.
             Первый ${p} разблокирует новые улучшения ${toTextStyle('Акулы','shark')}.<br>
             <img src="textures/PrestigeShard.png"><br>
             Вы уверены, что хотите получить престиж?
             `
         },
         get 'reset-core-message'() {
-            let c = toTextStyle('Ядро','core'), m = toTextStyle('Magmatic','core'), p = toTextStyle('Prestige','prestige')
+            let c = toTextStyle('ядро','core'), m = toTextStyle('Magmatic','core'), p = toTextStyle('Prestige','prestige')
             return `
             <h3>${c}</h3><br>
-            ${c} - это второй слой сброса.
-            При входе в ядро сбрасывается все, что делает ${toTextStyle('Престиж','prestige')}, а также осколки ${toTextStyle('Престижа','prestige')},
-            ${toTextStyle('Престижные','prestige')} улучшения, почти все ${toTextStyle('Изучения','prestige')} и Исследование за ${toTextStyle('Магматические','core')} фрагменты,
-            впервые разблокируя реактор ${toTextStyle('Ядра','core')}.<br>
+            ${c} - это второй слой престижа,
+            При входе в ядро сбрасывается все механики ${toTextStyle('престижа','prestige')} и осколки ${toTextStyle('престижа','prestige')},
+            ${toTextStyle('престижные','prestige')} улучшения, почти все ${toTextStyle('исследования','престижа')} и исследования за ${toTextStyle('магматические','core')} фрагменты.
+            Также разблокирует реактор ${toTextStyle('ядра','core')}.<br>
             <img src="textures/Magmatic.png"><br>
             Вы уверены, что хотите войти в ядро?
             `
@@ -244,18 +244,18 @@ LANGUAGES.RU = {
         'level': "Уровень",
         'effect': "Эффект",
         'cost': "Цена",
-        'buyMax': "Купить Максимум",
+        'buyMax': "Купить максимум",
         'require': "Требуется",
         'next-at': "Следующее",
         'depth': "Глубина",
 
-        'upgrade-shark': x => `Повысить уровень ${toTextStyle('Акулы','shark')}<br>Цена: ${x.format(0)} ${toTextStyle('Рыб','fish')}`,
-        'shark-bonus-fish': x => `+${x.format(0)} к основе ${toTextStyle('Рыбы','fish')}`,
-        'shark-bonus-prestige': x => `${formatMult(x)} Осколков ${toTextStyle('Престижа','prestige')}`,
+        'upgrade-shark': x => `Повысить уровень ${toTextStyle('акулы','shark')}<br>Цена: ${x.format(0)} ${toTextStyle('ед. рыбы','fish')}`,
+        'shark-bonus-fish': x => `+${x.format(0)} к основе количества ${toTextStyle('рыб','fish')}`,
+        'shark-bonus-prestige': x => `${formatMult(x)} осколков ${toTextStyle('престижа','prestige')}`,
         'shark-bonus-core': x => `${formatMult(x)} ${toTextStyle('Магматических','core')} фрагментов`,
 
         'research-afford': bool => bool ? "Купить" : "Недостаточно ресурсов",
-        'research-bought': bool => bool ? `<b>Куплен</b>` : `<b>Не куплен</b>`,
+        'research-bought': bool => bool ? `<b>Куплено</b>` : `<b>Не куплено</b>`,
 
         'off-on': bool => bool ? "ВКЛ" : "ВЫКЛ",
 
@@ -266,7 +266,7 @@ LANGUAGES.RU = {
 
         'popup-desc' : {
             import: `Вставьте свое сохранение. ПРЕДУПРЕЖДЕНИЕ: ТЕКУЩЕЕ СОХРАНЕНИЕ БУДЕТ ПЕРЕЗАПИСАНО!`,
-            wipe: `Вы уверены, что хотите стереть свои сохранения? Чтобы стереть, введите "<span class="free-select">I'm sorry what I don't want sharks!</span>"`,
+            wipe: `Вы уверены, что хотите стереть свои сохранения? Для подтверждения введите "<span class="free-select">I'm sorry what I don't want sharks!</span>"`,
         },
 
         'notify-desc' : {
@@ -274,11 +274,11 @@ LANGUAGES.RU = {
         },
 
         'radio-desc' : {
-            'notation': ['Форматирование записи чисел',['Научный','Стандартный','Смешанный научный']],
-            'comma-format': ['Максимальный порядок величины числа запятыми',['3','6','9','12','15']],
+            'notation': ['Формат записи чисел',['Научный','Стандартный','Смешанный научный']],
+            'comma-format': ['Максимальное количество цифр научной записи',['3','6','9','12','15']],
             'autosave': ['Автосохранение',['Отключено','Включено']],
-            'autosave-time': ['Интервал автосохранения',['15с','30с','60с','120с']],
-            'offline': ['Оффлайн-прогресс',['Отключено','Включено']],
+            'autosave-time': ['Интервал автосохранения',['15 сек.','30 сек.','60 сек.','120 сек.']],
+            'offline': ['Оффлайн-прогресс',['Отключен','Включен']],
         },
 
         'radio-desc-default' : ['Отключено','Включено'],
