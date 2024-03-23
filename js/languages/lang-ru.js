@@ -51,7 +51,7 @@ LANGUAGES.RU = {
 
         // Elements
 
-        'fish-div': `Ваша ${toTextStyle('Акула','акула')} съела <h2>${toTextStyle('0','fish','fish-amount')}</h2> <span id="fish-gain"></span> ед. рыбы.`,
+        'fish-div': `Ваша ${toTextStyle('Акула','акула')} съела <h2>${toTextStyle('0','fish','fish-amount')}</h2> <span id="fish-gain"></span> рыб.`,
         'shark-stats': `${toTextStyle('Статистика','статистика')} Акулы<br>Level: <h4 id="shark-level">???</h4><br>Ранг: <h4 id="shark-tier">???</h4>`,
 
         'option-title-1': "Основные настройки",
@@ -82,291 +82,234 @@ LANGUAGES.RU = {
         'su-s1-desc': `Увеличивает съеденную ${toTextStyle('Рыбу','рish')} на <b>+1</b> за уровень.`,
 
         'su-s2-req': "Уровень 7",
-        'su-s2-name': 'Ловкость акулы',
-        'su-s2-desc': `Увеличивает базу уровня ${toTextStyle('Акулы','акулы')} ${toTextStyle('Fish','fish')} bonus by <b>+1</b> per level.`,
+        'su-s2-name': 'Ловкость Акулы',
+        'su-s2-desc': `Увеличивает базовый бонус ${toTextStyle('Рыбы','fish')} уровня ${toTextStyle('Акулы','shark')} на <b>+1</b> за уровень.`,
 
-        'su-s3-req': "Level 15",
-        'su-s3-name': 'Shark Teeth',
-        'su-s3-desc': `Increases the exponent of 1st ${toTextStyle('Shark','shark')} Upgrade by <b>+50%</b> per level.`,
+        'su-s3-req': "Уровень 15",
+        'su-s3-name': 'Зубы Акулы',
+        'su-s3-desc': `Увеличивает показатель 1-го улучшения ${toTextStyle('Акулы','shark')} на <b>+50%</b> за уровень.`,
 
-        'su-s4-req': "Level 38",
-        'su-s4-name': 'Shark Exponent',
-        'su-s4-desc': `Increases the exponent of ${toTextStyle('Fish','fish')} by <b>+1%</b> per level.`,
+        'su-s4-req': "Уровень 38",
+        'su-s4-name': 'Экспонента Акулы',
+        'su-s4-desc': `Увеличивает экспоненту ${toTextStyle('Рыбы','fish')} на <b>+1%</b> за уровень.`,
 
-        'su-s5-req': "Level 640",
-        'su-s5-name': 'Radioactive Shark',
-        'su-s5-desc': `Increase ${toTextStyle('Radiation '+icon("radioactive"),'core')} production by <b>x2</b> per level.`,
+        'su-p1-req': "Первый Престиж",
+        'su-p1-name': 'Суперсила Акулы',
+        'su-p1-desc': `Увеличивает количество съеденной ${toTextStyle('Рыбы','fish')} на <b>x3</b> за уровень.`,
 
-        'su-p1-req': "First Prestige",
-        'su-p1-name': 'Super Shark Strength',
-        'su-p1-desc': `Increases ${toTextStyle('Fish','fish')} eaten by <b>×3</b> per level.`,
+        'su-p2-req': "Первый Престиж",
+        'su-p2-name': 'Престижный Усилитель',
+        'su-p2-desc': `Увеличивает количество съеденной ${toTextStyle('Рыбы','fish')} на <b>×lg(${toTextStyle('Рыба','fish')})</b> за уровень.`,
 
-        'su-p2-req': "First Prestige",
-        'su-p2-name': 'Prestige Booster',
-        'su-p2-desc': `Increases ${toTextStyle('Fish','fish')} eaten by <b>×lg(${toTextStyle('Fish','fish')})</b> per level.`,
-
-        'su-p3-name': 'Scaled Shark',
-        'su-p3-desc': `Delays the first ${toTextStyle('Shark','shark')} Level scaling by <b>+1</b> per level.`,
+        'su-p3-name': 'Масштабная Акула',
+        'su-p3-desc': `Увеличивает первую шкалу уровня ${toTextStyle('Акулы','shark')}, начиная с <b>+1</b> за уровень.`,
 
         // Researches
 
-        'research-p1-name': "Prestigious Agility",
-        'research-p1-desc': `'Shark Agility' now affects the base of ${toTextStyle("Shark",'shark')} Level's ${toTextStyle("Prestige",'prestige')} Shard bonus at a reduced rate.`,
+        'research-p1-name': "Престижная Ловкость",
+        'research-p1-desc': `'Ловкость Акулы' теперь влияет на базовый бонус осколков ${toTextStyle('Престижа','prestige')} уровня ${toTextStyle('Акулы','shark')} в меньшей степени.`,
 
-        'research-p2-name': "Shark Upgrade EL",
-        'research-p2-desc': `${toTextStyle("Shark",'shark')} ${toTextStyle("Fish",'fish')} upgrades no longer spend ${toTextStyle("Fish",'fish')}.`,
+        'research-p2-name': "Улучшение Акулы EL",
+        'research-p2-desc': `${toTextStyle("Рыбные",'fish')} улучшения ${toTextStyle("Акулы",'shark')} больше не тратят ${toTextStyle("Рыбы",'fish')}.`,
 
-        'research-p3-name': "Upgraded Shark Level",
-        'research-p3-desc': `Reduce the base of ${toTextStyle("Shark",'shark')} level's requirement by <b>1</b>,
-        but force a ${toTextStyle("Prestige",'prestige')} reset, resetting your ${toTextStyle("Prestige",'prestige')} shards and ${toTextStyle("Prestige",'prestige')} upgrades.
-        Unlock new ${toTextStyle("Shark",'shark')} upgrades.`,
+        'research-p3-name': "Обновленный уровень Акулы",
+        'research-p3-desc': `Уменьшает базу требования уровня ${toTextStyle("Акулы",'shark')} на <b>1</b>,
+        но делает ${toTextStyle("Престижный",'prestige')} сброс, сбросив осколки ${toTextStyle("Прстижа",'prestige')} и ${toTextStyle("Престижные",'prestige')} улучшения.
+        Разблокирует новые улучшения ${toTextStyle("Акулы",'shark')}.`,
 
-        'research-p4-name': "Better Prestige",
-        'research-p4-desc': `Slightly improve the formula of ${toTextStyle("Prestige",'prestige')} shards gain.`,
+        'research-p4-name': "Улучшенный Престиж",
+        'research-p4-desc': `Немного улучшите формулу получения осколков ${toTextStyle("Престижа",'prestige')}.`,
 
-        'research-p5-name': "Mega Strength",
-        'research-p5-desc': `'Super Shark Strength' is <b>1%</b> stronger for every ${toTextStyle("Shark",'shark')} Level, starting at 100.`,
+        'research-p5-name': "Мега-Сила",
+        'research-p5-desc': `'Суперсила Акулы' на <b>1%</b> сильнее за каждый уровень ${toTextStyle("Акулы",'shark')}, начиная со 100.`,
 
-        'research-p6-name': "Super Scaled Shark",
-        'research-p6-desc': `'Scaled Shark' is <b>twice</b> as strong.`,
+        'research-p6-name': "Супермасштабная Акула",
+        'research-p6-desc': `'Масштабная Акула' в <b>два</b> раза сильнее.`,
 
-        'research-p7-name': "Better Resources I",
-        'research-p7-desc': `${toTextStyle("Coral",'coral')} and ${toTextStyle("Ice",'ice')}' effect is better.`,
+        'research-p7-name': "Лучшие Ресурсы I",
+        'research-p7-desc': `Эффекты ${toTextStyle("Коралла",'coral')} и ${toTextStyle("Льда",'ice')} становятся лучше.`,
 
-        'research-p8-name': "Further Upgraded Shark Level",
-        'research-p8-desc': `Further reduce the base of ${toTextStyle("Shark",'shark')} level's requirement by 1.`,
+        'research-e1-name': "Океанский Синтез I",
+        'research-e1-desc': `${toTextStyle("Соль",'salt')} усиливает генерацию ${toTextStyle("Кораллов",'coral')}.`,
 
-        'research-e1-name': "Ocean Synergism I",
-        'research-e1-desc': `${toTextStyle("Salt",'salt')} boosts ${toTextStyle("Corals",'coral')} generated.`,
+        'research-e2-name': "Океанский Синтез II",
+        'research-e2-desc': `${toTextStyle("Сжатый Снег",'snow')} усиливает генерацию ${toTextStyle("Льда",'ice')}.`,
 
-        'research-e2-name': "Ocean Synergism II",
-        'research-e2-desc': `${toTextStyle("Compressed Snow",'snow')} boosts ${toTextStyle("Ice",'ice')} generated.`,
+        'research-c1-name': "C-Хранитель Изучения",
+        'research-c1-desc': `Сохраняет ${toTextStyle("Изучения",'prestige')} при входе в ${toTextStyle('Ядро','core')}.`,
 
-        'research-e3-name': "Exploration Automation",
-        'research-e3-desc': `Automatically update the best base of the first <b>X</b> oceans without exploring.`,
+        'research-c2-name': "C-Хранитель Исследования",
+        'research-c2-desc': `Сохраняет первые <b>X</b> разблокированных океанов и их глубину при входе в ${toTextStyle('Ядро','core')}.`,
 
-        'research-e4-name': "Kelp Oxidation",
-        'research-e4-desc': `<b>Oxygen</b> now affects ${toTextStyle("Kelp",'kelp')} production at a reduced rate.`,
+        'research-c3-name': "Привязанность Неона I",
+        'research-c3-desc': `<b>Неон</b> теперь влияет на 'Зубы Акулы', 'Экспоненту Акулы', and 'Масштабную Акулу'.`,
 
-        'research-c1-name': "Research C-Keeper",
-        'research-c1-desc': `Keep ${toTextStyle("Research",'prestige')} on entering the ${toTextStyle('Core','core')}.`,
-
-        'research-c2-name': "Exploration C-Keeper",
-        'research-c2-desc': `Keep first <b>X</b> oceans unlocked and their depth on entering the ${toTextStyle('Core','core')}.`,
-
-        'research-c3-name': "Neon's Affection I",
-        'research-c3-desc': `<b>Neon</b> now affects 'Shark Teeth', 'Shark Exponent', and 'Scaled Shark'.`,
-
-        'research-c4-name': "Better Nickel",
-        'research-c4-desc': `<b>Nickel</b>'s effect is <b>twice</b> as powerful.`,
-
-        'research-c5-name': "Additional Core Boost",
-        'research-c5-desc': `The core radiation's first boost now affects the core reactor's boost to ${toTextStyle('Fish','fish')} at a reduced rate.`,
-
-        'research-c6-name': "Radiation Reduction",
-        'research-c6-desc': `${toTextStyle('Magmatic','core')} fragments reduce the core radiation's limit at a reduced rate.`,
-
-        'research-c7-name': "Greater Shark Teeth",
-        'research-c7-desc': `The effect of 'Shark Teeth' is raised to the <b>2.5th</b> power.`,
+        'research-c4-name': "Улучшенный Никель",
+        'research-c4-desc': `Эффект <b>Никеля</b> в <b>два</b> раза сильнее.`,
 
         // Exploration
 
-        'explore-while': `While exploring`,
-        'explore-inside': (a,b,c)=>`Base ${a.format()}/s`+(b.gt(a) ? " ➜ " : " ~ ")+`${b.format()}/s`+`.<br>Reach ${format(c,0)} best ${toTextStyle("Fish",'fish')}.`,
-        'explore-outside': x=>`Your current base is ${x.format()}/s.<br>Explore the ocean!`,
+        'explore-while': `Во время исследования`,
+        'explore-inside': (a,b,c)=>`База ${a.format()}/s`+(b.gt(a) ? " ➜ " : " ~ ")+`${b.format()}/s`+`.<br>Набрать ${format(c,0)} ${toTextStyle("Рыб",'fish')}.`,
+        'explore-outside': x=>`Ваша текущая база - ${x.format()}/s.<br>Исследуйте океан!`,
 
-        'explore-next': x=>`New Ocean at ${toTextStyle("Shark",'shark')} Level <h3>${format(x,0)}</h3>.`,
+        'explore-next': x=>`Новый океан на <h3>${format(x,0)}</h3> уровне ${toTextStyle("Акулы",'shark')}.`,
 
-        'explore-doubler-1': x=>`Double ${x} gained.`,
-        'explore-doubler-2': `Double depth progression gain.`,
+        'explore-doubler-1': x=>`Удваивает генерацию ${x}.`,
+        'explore-doubler-2': `Удваивает глубину прогрессии.`,
 
-        'explore-0-name': `Pacific Ocean`,
-        'explore-0-desc': `${toTextStyle('Fish','fish')} gain is rooted by 2.`,
+        'explore-0-name': `Тихий Океан`,
+        'explore-0-desc': `Количество ${toTextStyle('Рыб','fish')} коренится на 2.`,
         'explore-0-milestone': [
-            `Raise ${toTextStyle('Prestige','prestige')} shards gained to the 1.05th power.`,
-            `Increase the resource and depth progression by 25% compounding per square-rooted ${toTextStyle('Shark','shark')} level.`,
-            `Leveling ${toTextStyle('Shark','shark')} will no longer spend ${toTextStyle('Fish','fish')}.`,
-            `Raise ${toTextStyle('Fish','fish')} eaten to the 1.05th power.`,
-            `Unlock the ${toTextStyle('Core','core')}.`,
+            `Возведёт количество осколков ${toTextStyle('Престижа','prestige')} в 1.05-й степени.`,
+            `Увеличивает ресурс и глубину прогрессии на 25% за уровень ${toTextStyle('Акулы','shark')} с квадратным корнем.`,
+            `При повышении уровня ${toTextStyle('Акулы','shark')} больше не будет тратить Рыбу.`,
+            `Возведёт количество съеденной ${toTextStyle('Рыбы','fish')} в 1.05-й степени.`,
+            `Разблокирует ${toTextStyle('Ядро','core')}.`,
         ],
 
-        'explore-1-name': `Arctic Ocean`,
-        'explore-1-desc': `Reset your ${toTextStyle("Prestige",'prestige')} shards and ${toTextStyle("Prestige",'prestige')} upgrades. ${toTextStyle('Prestige','prestige')} Shards gain is rooted by 2.`,
+        'explore-1-name': `Северный Ледовитый Океан`,
+        'explore-1-desc': `Сбросит осколки ${toTextStyle("Престижа",'prestige')} и ${toTextStyle("Престижные",'prestige')} улучшения. Количество осколков ${toTextStyle('Престижа','prestige')} коренится на 2.`,
         'explore-1-milestone': [
-            `Unlock Auto-${toTextStyle('Shark','shark')} ${toTextStyle('Prestige','prestige')} upgrades.`,
-            `Increase the resource and depth progression by 25% compounding per square-rooted ${toTextStyle('Shark','shark')} level.`,
-            `${toTextStyle('Shark','shark')} ${toTextStyle('Prestige','prestige')} upgrades will no longer spend ${toTextStyle('Prestige','prestige')} shards.`,
-            `Passively generate 100% of ${toTextStyle('Prestige','prestige')} shards earned on ${toTextStyle('Prestige','prestige')}.`,
+            `Разблокирует Авто-${toTextStyle("Престижное","prestige")} Улучшение ${toTextStyle("Акулы","shark")}.`,
+            `Увеличивает ресурс и глубину прогрессии на 25% за уровень ${toTextStyle('Акулы','shark')} с квадратным корнем.`,
+            `${toTextStyle("Престижные","prestige")} улучшения ${toTextStyle("Акулы","shark")} больше не будут тратить осколки ${toTextStyle('Престижа','prestige')}.`,
+            `Пассивно генерирует 100% осколков ${toTextStyle('Престижа','prestige')}, заработанных на ${toTextStyle('Престиже','prestige')}.`,
         ],
 
-        'explore-2-name': `Atlantic Ocean`,
-        'explore-2-desc': `Reset your ${toTextStyle("Prestige",'prestige')} shards and ${toTextStyle("Prestige",'prestige')} upgrades. ${toTextStyle('Shark','shark')} Level scales 10x as strong.` ,
+        'explore-2-name': `Атлантический Океан`,
+        'explore-2-desc': `Сбросит осколки ${toTextStyle("Престижа",'prestige')} и ${toTextStyle("Престижные",'prestige')} улучшения. Масштабы уровня ${toTextStyle('Акулы','shark')} в 10 раз сильнее.` ,
         'explore-2-milestone': [
-            `'Shark Teeth' and 'Shark Exponent' scalings are weaker slightly.`,
-            `Increase the resource and depth progression by 25% compounding per square-rooted ${toTextStyle('Shark','shark')} level.`,
-            `${toTextStyle('Shark','shark')} Level's first scaling starts +1 later per 500m of depth.`,
-            `${toTextStyle("Salt",'salt')}'s effect is 50% more powerful.`,
+            `Масштабирование 'Зуб Акулы' и 'Экспоненты Акулы' немного слабее.`,
+            `Увеличивает ресурс и глубину прогрессии на 25% за уровень ${toTextStyle('Акулы','shark')} с квадратным корнем.`,
+            `Первая шкала уровня ${toTextStyle('Акулы','shark')} начинает действовать через +1 на 500 м глубины.`,
+            `Эффект этого океана на 50% мощнее.`,
         ],
 
-        'explore-3-name': `Southern Ocean`,
-        'explore-3-desc': `Reset your ${toTextStyle("Prestige",'prestige')} shards and ${toTextStyle("Prestige",'prestige')} upgrades. You cannot buy ${toTextStyle('Shark','shark')} ${toTextStyle('Fish','fish')} & ${toTextStyle('Prestige','prestige')} upgrades.`,
+        'explore-3-name': `Южный Океан`,
+        'explore-3-desc': `Сбросит осколки ${toTextStyle("Престижа",'prestige')} и ${toTextStyle("Престижные",'prestige')} улучшения. Вы не можете покупать ${toTextStyle('Рыбные','fish')} и ${toTextStyle('Престижные','prestige')} улучшения ${toTextStyle('Акулы','shark')}.`,
         'explore-3-milestone': [
-            `Increase the base of exploration by 10x.`,
-            `Increase the resource and depth progression by 25% compounding per square-rooted ${toTextStyle('Shark','shark')} level.`,
-            `${toTextStyle('Compressed Snow','snow')}'s effect is 50% more powerful.`,
-        ],
-
-        'explore-4-name': `Indian Ocean`,
-        'explore-4-desc': `You are trapped in the first four active oceans, and your ${toTextStyle('Fish','fish')} exponent is raised to the 0.75th power.`,
-        'explore-4-milestone': [
-            `Decrease core radiation's limit by /1,000.`,
-            `Increase the resource and depth progression by 25% compounding per square-rooted ${toTextStyle('Shark','shark')} level.`,
-            `Core reactors scale +5 later.`,
-            `Improve ${toTextStyle('Kelp','kelp')} better.`,
+            `Увеличьте базу исследований в 10 раз.`,
+            `Увеличивает ресурс и глубину прогрессии на 25% за уровень ${toTextStyle('Акулы','shark')} с квадратным корнем.`,
+            `Эффект этого океана на 50% мощнее.`,
         ],
 
         // Core Reactor
 
-        'core-0-name': `Iron`,
-        'core-0-desc': `${toTextStyle("Fish",'fish')} raises itself based on <b>Iron</b>'s tier.`,
+        'core-0-name': `Железо`,
+        'core-0-desc': `${toTextStyle("Рыба",'fish')} возведёт себя на основе уровня <b>Железа</b>`,
 
-        'core-1-name': `Nickel`,
-        'core-1-desc': `${toTextStyle("Prestige",'prestige')} shards raise their base based on <b>Nickel</b>'s tier.`,
+        'core-1-name': `Никель`,
+        'core-1-desc': `Осколки ${toTextStyle("Престижа",'prestige')} возведут свою базу на основе уровня <b>Никеля</b>.`,
 
-        'core-2-name': `Oxygen`,
-        'core-2-desc': `Product of the first four oceans' resources boosts their production based on <b>Oxygen</b>'s tier.`,
+        'core-2-name': `Кислород`,
+        'core-2-desc': `Произведение ресурсов первых четырех океанов увеличивает их производство на основе уровня <b>Кислорода</b>.`,
 
-        'core-3-name': `Neon`,
-        'core-3-desc': `${toTextStyle("Shark",'shark')} Level reduces its requirement based on <b>Neon</b>'s tier.`,
+        'core-3-name': `Неон`,
+        'core-3-desc': `Уровень ${toTextStyle("Акулы",'shark')} снижает свое требование на основе уровня <b>Неона</b>.`,
 
-        'core-bonus': x => `Product of core reactors will boost ${toTextStyle("Fish",'fish')} by <h4>${formatMult(x)}</h4>.`,
-
-        // Core Radiation
-
-        'cr-start': x=>x?"Stop the experiment.":"Start the experiment.",
-
-        'upgrade-cr': (gen,cost)=>`
-        Upgrade the ${toTextStyle('Radiation '+icon("radioactive"),'core')} production.<br>
-        Producing <b>${format(gen,0)}</b> per second.<br>
-        Cost: ${format(cost,0)} ${toTextStyle('Fish '+icon("radioactive"),'fish')}`,
-
-        'reset-cr': (inc)=>`Reset the ${toTextStyle('Radiation '+icon("radioactive"),'core')}, but increase its limit by <b>${formatMult(inc,0)}</b>, and sometimes add a new boost or upgrade the boosts. You need to reach the limit to reset.`,
-
-        'cr-boosts': [
-            x=>`Provide <h4>+${format(x)}</h4> bonus core reactors on the first row.`,
-            x=>`Boost ${toTextStyle('Magmatic','core')} fragments by <h4>${formatMult(x)}</h4>.`,
-            x=>`The first four ${toTextStyle('Shark','shark')} ${toTextStyle('Fish','fish')} upgrades are <h4>${formatPercent(x.sub(1))}</h4> more powerful.`,
-            x=>`Second ${toTextStyle('Shark','shark')} level scaling is delayed by <h4>+${format(x)}</h4>.`,
-            x=>`Increase the base of ${toTextStyle('Shark','shark')} level's ${toTextStyle('Magmatic','core')} fragment bonus by <h4>+${format(x,3)}</h4>.`,
-        ],
+        'core-bonus': x => `Произведение ядерных реакторов увеличивает количество съеденной ${toTextStyle("Рыбы",'fish')} на <h4>${formatMult(x)}</h4>.`,
 
         // Automation
 
-        'auto-shark-name': `Auto-${toTextStyle("Shark","shark")} Level`,
-        'auto-su-name': `Auto-${toTextStyle("Shark","shark")} ${toTextStyle("Fish","fish")} Upgrade`,
-        'auto-spu-name': `Auto-${toTextStyle("Shark","shark")} ${toTextStyle("Prestige","prestige")} Upgrade`,
-        'auto-eu-name': `Auto-Exploration Upgrade`,
+        'auto-shark-name': `Авто-Уровень ${toTextStyle("Акулы","shark")}`,
+        'auto-su-name': `Авто-${toTextStyle("Рыбное","fish")} Улучшение ${toTextStyle("Акулы","shark")}`,
+        'auto-spu-name': `Авто-${toTextStyle("Престижное","prestige")} Улучшение ${toTextStyle("Акулы","shark")}`,
+        'auto-eu-name': `Авто-Улучшение Исследования`,
 
-        'auto-cost': (D,cost,name) => `Decrease Interval by ${formatReduction(D,0)}.<br>Cost: ${format(cost,0)} ${name}`,
-        'auto-interval': (a,b,maxed) => `Interval: ${format(a,3)}s`+(maxed ? "" :` ➜ ${format(b,3)}s`),
+        'auto-cost': (D,cost,name) => `Уменьшить интервал на ${formatReduction(D,0)}.<br>Цена: ${format(cost,0)} ${name}`,
+        'auto-interval': (a,b,maxed) => `Интервал: ${format(a,3)}с`+(maxed ? "" :` ➜ ${format(b,3)}с`),
 
         // Progress
 
-        'progress-0-text': r => `Reach ${format(r)} total ${toTextStyle('Fish','fish')}`, 
-        get 'progress-0-cond-text'() { return `Do a ${toTextStyle('Prestige','prestige')}` },
+        'progress-0-text': r => `Наберите ${format(r)} ${toTextStyle('Рыб','fish')}`, 
+        get 'progress-0-cond-text'() { return `Сделайте ${toTextStyle('Престиж','prestige')}` },
 
-        'progress-1-text': r => `Reach ${format(r)} ${toTextStyle('Prestige','prestige')} shards to unlock Automation`,
-        'progress-2-text': r => `Reach ${format(r)} ${toTextStyle('Prestige','prestige')} shards to unlock Research`,
-        'progress-3-text': r => `Reach ${toTextStyle('Shark','shark')} Level ${format(r,0)} to unlock Exploration`,
-        'progress-4-text': r => `Reach ${format(r)}m of Pacific ocean's depth to unlock the ${toTextStyle('Core','core')}`,
+        'progress-1-text': r => `Наберите ${format(r)} осколки ${toTextStyle('Престижа','prestige')}, чтобы разблокировать Автоматику`,
+        'progress-2-text': r => `Наберите ${format(r)} осколки ${toTextStyle('Престижа','prestige')}, чтобы разблокировать Изучение`,
+        'progress-3-text': r => `Достигните ${format(r,0)} уровня ${toTextStyle('Акулы','shark')}, чтобы разблокировать Исследование`,
+        'progress-4-text': r => `Достигните ${format(r)} м глубины Тихого океан, чтобы разблокировать ${toTextStyle('Ядро','core')}`,
 
-        'progress-5-text': r => `Reach ${format(r)} total ${toTextStyle('Prestige','prestige')} shards`, 
-        get 'progress-5-cond-text'() { return `Enter the ${toTextStyle('Core','core')}` },
+        'progress-5-text': r => `Наберите ${format(r)} осколки ${toTextStyle('Престижа','prestige')}`, 
+        get 'progress-5-cond-text'() { return `Войдите в ${toTextStyle('Ядро','core')}` },
 
-        'progress-6-text': r => `Reach ${format(r)} ${toTextStyle('Magmatic','core')} fragments to unlock the next core feature`, 
-
-        'progress-7-text': r => `Reach ${toTextStyle('Shark','shark')} Level ${format(r,0)} to unlock new ocean type`, 
-
-        'maxed-progress': "All features unlocked!",
+        'maxed-progress': "Все возможности разблокированы!",
 
         // Reset
 
         get 'reset-prestige-message'() {
-            let p = toTextStyle('Prestige','prestige'), s = toTextStyle('Shark','shark'), f = toTextStyle('Fish','fish')
+            let p = toTextStyle('Престиж','prestige')
             return `
             <h3>${p}</h3><br>
-            ${p} is the first reset layer. Prestiging resets your ${s}, ${s} upgrades, and ${f} for ${p} shards.
-            First ${p} unlocks new ${s} upgrades.<br>
+            ${p} - это первый слой сброса.
+            Престиж сбрасывает ваши ${toTextStyle('Акулу','shark')}, улучшения ${toTextStyle('Акулы','shark')} и ${toTextStyle('Рыбу','fish')} for за осколки ${toTextStyle('Престижа','prestige')}.
+            Первый ${p} разблокирует новые улучшения ${toTextStyle('Акулы','shark')}.<br>
             <img src="textures/PrestigeShard.png"><br>
-            Are you sure you want to prestige?
+            Вы уверены, что хотите получить престиж?
             `
         },
         get 'reset-core-message'() {
-            let c = toTextStyle('Core','core'), m = toTextStyle('Magmatic','core'), p = toTextStyle('Prestige','prestige')
+            let c = toTextStyle('Ядро','core'), m = toTextStyle('Magmatic','core'), p = toTextStyle('Prestige','prestige')
             return `
-            <h3>The ${c}</h3><br>
-            The ${c} is the second reset layer. Entering the core resets everything ${p} does, as well as ${p} shards, ${p} upgrades, ${toTextStyle('Research','prestige')} (almost), and Exploration for ${m} fragments.
-            It also unlocks the ${c} reactor.<br>
+            <h3>${c}</h3><br>
+            ${c} - это второй слой сброса.
+            При входе в ядро сбрасывается все, что делает ${toTextStyle('Престиж','prestige')}, а также осколки ${toTextStyle('Престижа','prestige')},
+            ${toTextStyle('Престижные','prestige')} улучшения, почти все ${toTextStyle('Изучения','prestige')} и Исследование за ${toTextStyle('Магматические','core')} фрагменты,
+            впервые разблокируя реактор ${toTextStyle('Ядра','core')}.<br>
             <img src="textures/Magmatic.png"><br>
-            Are you sure you want to enter the core?
+            Вы уверены, что хотите войти в ядро?
             `
         },
-        
+
         // Other
 
-        'upgrade-shark': x => `Upgrade ${toTextStyle('Shark','shark')} Level<br>Cost: ${x.format(0)} ${toTextStyle('Fish','fish')}`,
-        'shark-bonus-fish': x => `+${x.format(0)} ${toTextStyle('Fish','fish')}'s base`,
-        'shark-bonus-prestige': x => `${formatMult(x)} ${toTextStyle('Prestige','prestige')} shard`,
-        'shark-bonus-core': x => `${formatMult(x)} ${toTextStyle('Magmatic','core')} fragments`,
-        // 'shark-bonus-rad': x => `${formatMult(x)} ${toTextStyle('Radiation ' + icon("radioactive"),'core')}`,
+        'level': "Уровень",
+        'effect': "Эффект",
+        'cost': "Цена",
+        'buyMax': "Купить Максимум",
+        'require': "Требуется",
+        'next-at': "Следующее",
+        'depth': "Глубина",
 
-        'level': "Level",
-        'effect': "Effect",
-        'cost': "Cost",
-        'buyMax': "Buy Max",
-        'require': "Require",
-        'next-at': "Next at",
-        'depth': "Depth",
+        'upgrade-shark': x => `Повысить уровень ${toTextStyle('Акулы','shark')}<br>Цена: ${x.format(0)} ${toTextStyle('Рыб','fish')}`,
+        'shark-bonus-fish': x => `+${x.format(0)} к основе ${toTextStyle('Рыбы','fish')}`,
+        'shark-bonus-prestige': x => `${formatMult(x)} Осколков ${toTextStyle('Престижа','prestige')}`,
+        'shark-bonus-core': x => `${formatMult(x)} ${toTextStyle('Магматических','core')} фрагментов`,
 
-        'offline-time-text': x=>`You have been offline for <b>${formatTime(x,0)}</b>.`,
+        'research-afford': bool => bool ? "Купить" : "Недостаточно ресурсов",
+        'research-bought': bool => bool ? `<b>Куплен</b>` : `<b>Не куплен</b>`,
 
-        'research-afford': bool => bool ? "Purchase" : "Can't Afford",
-        'research-bought': bool => bool ? `<b>Purchased</b>` : `<b>Not Purchased</b>`,
-
-        'off-on': bool => bool ? "ON" : "OFF",
+        'off-on': bool => bool ? "ВКЛ" : "ВЫКЛ",
 
         'popup-buttons': [
-            ["Yes","No"],
-            ["Ok","Cancel"],
+            ["Да","Нет"],
+            ["Ок","Отмена"],
         ],
 
         'popup-desc' : {
-            import: `Paste in your save. WARNING: WILL OVERWRITE YOUR CURRENT SAVE!`,
-            wipe: `Are you sure you want to wipe your save? To wipe, type "<span class="free-select">I'm sorry what I don't want sharks!</span>"`,
+            import: `Вставьте свое сохранение. ПРЕДУПРЕЖДЕНИЕ: ТЕКУЩЕЕ СОХРАНЕНИЕ БУДЕТ ПЕРЕЗАПИСАНО!`,
+            wipe: `Вы уверены, что хотите стереть свои сохранения? Чтобы стереть, введите "<span class="free-select">I'm sorry what I don't want sharks!</span>"`,
         },
 
         'notify-desc' : {
-            save: "Game Saved!",
+            save: "Игра сохранена!",
         },
 
         'radio-desc' : {
-            'notation': ['Formatting Notation',['Scientific','Standard','Mixed Scientific']],
-            'comma-format': ['Maximum OoMs of Number Commas',['3','6','9','12','15']],
-            'autosave': ['Autosaving',['Disabled','Enabled']],
-            'autosave-time': ['Autosave Interval',['15s','30s','60s','120s']],
-            'offline': ['Offline Progress',['Disabled','Enabled']],
+            'notation': ['Форматирование записи чисел',['Научный','Стандартный','Смешанный научный']],
+            'comma-format': ['Максимальный порядок величины числа запятыми',['3','6','9','12','15']],
+            'autosave': ['Автосохранение',['Отключено','Включено']],
+            'autosave-time': ['Интервал автосохранения',['15с','30с','60с','120с']],
+            'offline': ['Оффлайн-прогресс',['Отключено','Включено']],
         },
 
-        'radio-desc-default' : ['Disabled','Enabled'],
+        'radio-desc-default' : ['Отключено','Включено'],
 
-        'prompt-placeholder': "Type text here...",
+        'prompt-placeholder': "Введите текст...",
 
-        'option-buttons-text': ["Save","Export to clipboard","Export as file","Import from prompt","Import from file","WIPE!!!",'Join the community (Discord)','Support the creator (Boosty)'],
+        'option-buttons-text': ["Сохранить","Экспорт через буфер обмена","Экспорт через файл","Импорт через запрос","Импорт через файл","ОЧИСТИТЬ!!!"],
 
-        'confirm-prestige': "Prestige",
-        'confirm-core': "Enter the Core",
-    },
-}
+        'confirm-prestige': "Престиж",
         'confirm-core': "Вход в ядро",
     },
 }
