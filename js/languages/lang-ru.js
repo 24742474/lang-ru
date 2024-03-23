@@ -62,28 +62,28 @@ LANGUAGES.RU = {
         'offline-speed': "Скорость в оффлайне",
         'offline-done': "Готово.",
 
-        'radioactive-div': `${toTextStyle('Ядро','ядро')} сделало <h3>${toTextStyle('0 / 1,000 '+icon("radioactive"),'core','radioactive-amount')}</h3> <span id="radioactive-gain"></span>.`,
+        'radioactive-div': `${toTextStyle('Ядро','ядро')} произвело <h3>${toTextStyle('0 / 1,000 '+icon("radioactive"),'core','radioactive-amount')}</h3> <span id="radioactive-gain"></span>.`,
         get 'radioactive-summary'() {
-            var c = toTextStyle('Core','core'), rf = toTextStyle('Fish '+icon("radioactive"),'fish')
+            var c = toTextStyle('Core','core'), rf = toTextStyle('Рыба '+icon("radioactive"),'рыбы')
             return `
-            <summary>The ${c} Radiation Experiment</summary>
-            Experimenting with the core radiation forces a ${toTextStyle('Core','core')} reset.
-            While in the experiment, all core reactors don't work, and ${toTextStyle('Fish','fish')}, ${toTextStyle('Prestige','prestige')} shards, and the first four oceans' resources are cube-rooted.
-            The experiment forces your ${toTextStyle('Shark','shark')} to eat radioactive ${rf}.<br>
-            Upgrade with radioactive ${rf} to generate more ${toTextStyle('Radiation '+icon("radioactive"),'core')}, which gives you additional boosts.
+            <summary>${c} Радиоактивеный эксперимент</summary>
+            Эксперементы с радиацей выполняют ${toTextStyle('Ядерный','ядерный')} ресет.
+            Пока в эксперименте, все ядерные реакторы не работают, и ${toTextStyle('Рыба','рыба')}, ${toTextStyle('Осколки','осколки')} престижа, первые 4 океанических ресурса возведены в кубический корень.
+            Эксперимент заставляет вашу ${toTextStyle('Акулу','акулу')} есть радиоактивные ${rf}.<br>
+            Покупайте радиоактивные улучшения ${rf} чтобы генерировать больше ${toTextStyle('Радиации '+icon("radioactive"),'core')}, которая дает дополнительные усиления.
             `
         },
-        'radioboost-div': `You have <h3 id="radioactive-boost">0</h3> radioactive boosts.`,
+        'radioboost-div': `У вас <h3 id="radioactive-boost">0</h3> радиоактивных усилений.`,
 
         // Upgrades
 
-        'su-s1-req': "Level 3",
-        'su-s1-name': 'Shark Strength',
-        'su-s1-desc': `Increases ${toTextStyle('Fish','fish')} eaten by <b>+1</b> per level.`,
+        'su-s1-req': "Уровень 3",
+        'su-s1-name': 'Сила акулы',
+        'su-s1-desc': `Увеличивает съеденную ${toTextStyle('Рыбу','рish')} на <b>+1</b> за уровень.`,
 
-        'su-s2-req': "Level 7",
-        'su-s2-name': 'Shark Agility',
-        'su-s2-desc': `Increases the base of ${toTextStyle('Shark','shark')} Level's ${toTextStyle('Fish','fish')} bonus by <b>+1</b> per level.`,
+        'su-s2-req': "Уровень 7",
+        'su-s2-name': 'Ловкость акулы',
+        'su-s2-desc': `Увеличивает базу уровня ${toTextStyle('Акулы','акулы')} ${toTextStyle('Fish','fish')} bonus by <b>+1</b> per level.`,
 
         'su-s3-req': "Level 15",
         'su-s3-name': 'Shark Teeth',
